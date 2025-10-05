@@ -57,6 +57,15 @@ nav .links {
     align-items: center;
 }
 
+#nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 .herosection {
     position: relative;
     margin: 100px 30px 30px 30px;
@@ -311,11 +320,12 @@ nav .links {
 /* } */
     .contact .container {
     max-width: 1380px;
-    margin: 0 auto;
-    padding: 40px ;
+    margin: 30px auto;
+    padding: 40px 30px ;
     /* background-color: white; */
     border-radius: 30px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
 }
 
 .contact h2 {
@@ -332,6 +342,7 @@ nav .links {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2rem;
       justify-items: center;
+      width: 100%
     }
 
     /* .contact-item {
@@ -380,7 +391,7 @@ nav .links {
     /* background: linear-gradient(145deg, #7b61ff, #e0340d); */
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    width: 180px;
+    width: 100%;
     height: 180px;
     display: flex;
     flex-direction: column;
@@ -511,14 +522,14 @@ footer {
 
 /* Make project boxes transparent */
 .box {
-    background-color: blur(10px) !important;
+    /* background-color: rgba(255, 255, 255, 0.2); */
     border: 5px solid rgba(255, 255, 255, 0.2);
     box-shadow: none;
 }
 
 /* Make contact items transparent */
 .contact-item {
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
     border: 5px solid rgba(255, 255, 255, 0.2);
     box-shadow: none;
 }
@@ -579,6 +590,17 @@ footer {
         padding: 15px 20px;
     }
 
+    nav .links {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px 20px;
+  justify-content: center; /* center horizontally */
+  width: 100%;
+  /* height: 60px; */
+  padding: 0;
+}
+
     nav .links a {
         padding-right: 15px;
         padding-bottom: 10px;
@@ -590,8 +612,15 @@ footer {
         gap: 20px;
     }
 
+    .contact .container {
+        padding: 25px 20px;
+        margin: 20px 15px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
     .contact-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
   }
   
@@ -618,12 +647,16 @@ footer {
     nav {
         flex-direction: column;
         align-items: center;
+        font-size: 16px;
         padding: 10px 15px;
     }
 
     nav .links {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         text-align: center;
+        margin-top: 10px;
     }
 
     nav .links a {
@@ -657,13 +690,21 @@ footer {
         height: 120px;
     }
 
+    .contact .container {
+        padding: 20px 15px;
+        margin: 15px auto;
+        width: 85%;
+        box-sizing: border-box;
+
+    }
+    
     .contact-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
 
   .contact-item {
-    width: 100%;
+    width: 200px;
     max-width: 300px; /* or 100%, depending on container */
     height: auto;
     padding: 20px 0;
@@ -673,3 +714,8 @@ footer {
     font-size: 2rem;
   }
 }
+
+
+
+
+
