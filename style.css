@@ -76,7 +76,7 @@ nav .links {
 .herosection::before {
     /* content: ""; */
     position: absolute;
-    inset: 0;
+    /* inset: 0; */
     /* background: url('https://www.transparenttextures.com/patterns/geometry2.png') repeat; */
     opacity: 0.1;
     pointer-events: none;
@@ -387,7 +387,7 @@ nav .links {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 1px;
     transition: box-shadow 0.3s ease;
     cursor: default;
 }
@@ -501,8 +501,8 @@ footer {
 .about,
 .projects,
 .contact .container {
-    background-color: transparent !important;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    /* border: 100px solid rgba(255, 255, 255, 0.2); */
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.05);
@@ -511,23 +511,23 @@ footer {
 
 /* Make project boxes transparent */
 .box {
-    background-color: transparent !important;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: blur(10px) !important;
+    border: 5px solid rgba(255, 255, 255, 0.2);
     box-shadow: none;
 }
 
 /* Make contact items transparent */
 .contact-item {
     background-color: transparent !important;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 5px solid rgba(255, 255, 255, 0.2);
     box-shadow: none;
 }
 
 
 /* Optional: remove loader background if needed */
-.loader-wrapper {
+/* .loader-wrapper {
     background-color: transparent !important;
-}
+} */
 
 
 
